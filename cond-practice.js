@@ -51,26 +51,64 @@ if (person_age >= 18) {
 }
 
 // Write a nested if statement that prints "Perfect square" if a number is both a whole number and its square root is an integer.
+let number = 25;
+if (Number.isInteger(number)){
+  if (Number.isInteger(Math.sqrt(number))){
+    console.log("Perfect Square")
+  }
+}
 
 // Use a ternary operator to check if a user is online. If isOnline is true, print "User is online", otherwise "User is offline".
 
 let isOnline = true;
 if (isOnline){
-    console.log("User is Online")
+    console.log("User is Online");
 }
 else{
-    console.log("User is Offline")
+    console.log("User is Offline");
     
 }
 
 // Create a program that accepts a day of the week ("Monday", "Tuesday", etc.) and prints "Weekday" or "Weekend" based on the value.
-
+let day = "Wednesday";
+if ((day === "Saturday") | (day === "Sunday")){
+  console.log("Weekend");
+}
+else{
+  console.log("Weekday");
+}
 
 // Given two booleans isAdult and hasTicket, use a combination of AND, OR, and NOT to write an access policy:
-
-
+isAdult = true;
+hasTicket = true;
+if (isAdult & hasTicket){
+  console.log("Access granted");
+}
+else if(!isAdult & hasTicket){
+  console.log("Need guardian")
+}
+else if(!hasTicket){
+  console.log("No access")
+}
 
 
 
 // Given a number, check if it is even and divisible by 5. If so, print "Valid number".
+let no = 30
+if ((no%2 === 0) & (no%5 === 0)){
+  console.log("Valid number.")
+}
+else{
+  console.log("")
+}
 
+
+
+// You are making a weather app. If isRaining is true, print "Take an umbrella"; if isRaining is false, print "You’re good to go".
+isRaining = true;
+if (isRaining){
+  console.log("Take an umbrella");
+}
+else{
+  console.log("You’re good to go");
+}
