@@ -39,3 +39,21 @@ A set of tools that belongs to the Browser and you as a JavaScript developer use
 The DOM is the bridge between your code and what’s shown in the browser.
 
 Without the DOM, JavaScript wouldn’t be able to “see” or change anything on your page.
+
+An API (Application Programming Interface) is a data source that your JavaScript application can communicate with.
+You’ll use APIs to:
+
+Show real-time data in your apps (like weather, stock prices, or blog posts)
+Allow users to send information (like forms or feedback)
+Connect with other services (like Google Maps or Spotify)
+
+An object is a flexible data structure in JavaScript. Unlike arrays, which are ordered and use numbered positions, objects use key-value pairs, which you define yourself.
+There are two ways to get values out of an object:
+
+1. Dot Notation
+console.log(car.model); // Camry
+This is the most common way if you already know the property name.
+
+2. Bracket Notation
+console.log(car["model"]); // Camry
+Use this when the key is stored in a variable or contains special characters.
